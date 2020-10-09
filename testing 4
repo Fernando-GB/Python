@@ -1,0 +1,9 @@
+def alterar(nomes):
+    print 'Qual nome vc gostaria de alterar?'
+    nome_a_alterar = raw_input()
+
+    if(nome_a_alterar in nomes):
+        posicao = nomes.index(nome_a_alterar)
+        print 'Digite novo nome:'
+        nome_novo = raw_input()
+        nomes[posicao] = nome_novo
