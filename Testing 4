@@ -1,0 +1,6 @@
+def procurar_regex(nomes):
+    print('Digite a expressão regular')
+    regex = raw_input()
+    nomes_concatenados = ' '.join(nomes)
+    resultados = re.findall(regex, nomes_concatenados)
+    print(resultados)
