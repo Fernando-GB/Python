@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 def alterar(nomes):
     print 'Qual nome vc gostaria de alterar?'
     nome_a_alterar = raw_input()
