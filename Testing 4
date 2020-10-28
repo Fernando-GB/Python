@@ -1,6 +1,9 @@
-def procurar_regex(nomes):
-    print('Digite a expressão regular')
-    regex = raw_input()
-    nomes_concatenados = ' '.join(nomes)
-    resultados = re.findall(regex, nomes_concatenados)
-    print(resultados)
+def alterar(nomes):
+    print 'Qual nome vc gostaria de alterar?'
+    nome_a_alterar = raw_input()
+
+    if(nome_a_alterar in nomes):
+        posicao = nomes.index(nome_a_alterar)
+        print 'Digite novo nome:'
+        nome_novo = raw_input()
+        nomes[posicao] = nome_novo
