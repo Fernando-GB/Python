@@ -1,11 +1,13 @@
->>> from models import Perfil
+# -*- coding: UTF-8 -*-
 
->>> perfil1 = Perfil('Flávio Almeida', 'não informado', 'Caelum')
->>> perfil1.nome
->>> perfil1.telefone
->>> perfil1.empresa
+from models import Perfil
 
->>> perfil2 = Perfil('Nico Steppat', 'segredo', 'Caelum')
->>> perfil2.nome
->>> perfil2.telefone
->>> perfil2.empresa
+perfil1 = Perfil('Flávio Almeida', 'não informado', 'Caelum')
+perfil1.nome
+perfil1.telefone
+perfil1.empresa
+
+perfil2 = Perfil('Nico Steppat', 'segredo', 'Caelum')
+perfil2.nome
+perfil2.telefone
+perfil2.empresa
