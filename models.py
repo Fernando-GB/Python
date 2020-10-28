@@ -1,4 +1,6 @@
-class Perfil():
+# -*- coding: UTF-8 -*-
+
+class Perfil(object):
     'Classe padrão para perfis de usuários'
 
     def __init__(self, nome, telefone, empresa):
