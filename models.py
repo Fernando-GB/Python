@@ -16,4 +16,16 @@ class Perfil(object):
         self.__curtidas+=1
 
     def obter_curtidas(self):
-        return self.__curtidas
+        if self.__tipo == 1:
+            return self.__curtidas
+        
+class Perfil_Vip(Perfil):
+    'Classe padrão para perfis de usuários vips'
+
+    def __init__(self, nome, telefone, empresa, apelido):
+        super(Perfil_Vip, self).__init__(nome, telefone, empresa)
+        self.apelido = apelido
+
+    def obter_creditos(self):
+        return super(Perfil_Vip, self).obter__curtidas() * 10.0
+
